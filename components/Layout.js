@@ -6,7 +6,7 @@ const Layout = ({children}) => {
     <>
         <div className='absolute ml-10 mt-[-10px] w-[125px] h-[125px] cursor-pointer rounded-full object-contain z-0'> 
             <Link href='/'>
-                <Image width={200} height={200} src='/FunnyColor.svg' className='bg-white hover:bg-red-50 rounded-full w-[200%]' />
+                <Image width={200} height={200} src='/FunnyColor.svg' alt='Logo' className='bg-white hover:bg-red-50 rounded-full w-[200%]' />
             </Link>
         </div>
         <nav className='from-pink-400 to-pink-600 bg-gradient-to-br flex justify-end p-3 z-0'>
@@ -26,8 +26,8 @@ const Layout = ({children}) => {
             </div>
         </nav> 
         {children} 
-        <footer className='from-pink-400 to-pink-600 bg-gradient-to-br relative bottom-0 left-0 w-[100%] text-center text-white p-1 z-0'>
-            Ⓡ FunnyColor Decorations. Todos los Derechos Reservados
+        <footer className='from-pink-400 to-pink-600 bg-gradient-to-br relative bottom-0 left-0 w-[100%] text-center text-white p-2'>
+            <p>Ⓡ FunnyColor Decorations. Todos los Derechos Reservados</p>
         </footer>
     </>
   )
